@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-slate-100 min-h-screen;
+  background-image: linear-gradient(135deg, #0f172a 0%, #020617 50%, #0f172a 100%);
+}
+
+/* Leaflet overrides for dark theme */
+.leaflet-container {
+  background: #1e293b !important;
+  border-radius: 0.75rem;
+}
