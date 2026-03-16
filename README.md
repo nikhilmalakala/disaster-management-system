@@ -1,101 +1,56 @@
-# Disaster Management & Emergency Response (DMER)
+🌍 Disaster Management & Emergency Response System (MERN)
+-
+A full-stack Disaster Management and Emergency Response system built using the MERN stack to report disasters, send real-time SOS alerts, and manage incidents efficiently.
 
-MERN-based, production-structured web app for disaster management, real-time SOS alerts, incident reporting and analytics.
+📌 Features
+----------------------------------------------------------------------------------------------------------------------------
+User Authentication (Citizen, Authority, Admin)
 
-## Tech Stack
+Disaster / Incident Reporting
 
-- **Backend**: Node.js, Express.js, MongoDB (Mongoose), Socket.io, Multer, JWT, bcrypt, express-rate-limit, morgan, dotenv
-- **Frontend**: React (Vite), React Router, Tailwind CSS (dark / glassmorphism), Leaflet, Recharts, socket.io-client, axios
+Image Upload for Incidents
 
-## Project Structure
+Real-Time SOS Alerts using Socket.io
 
-```text
-server/
-  controllers/
-  models/
-  routes/
-  middleware/
-  socket/
-  seed/
-  server.js
+Authority Dashboard for Incident Management
 
-client/
-  src/
-    components/
-    pages/
-    context/
-    services/
-    hooks/
-    App.jsx
-    main.jsx
-```
+Incident Status Tracking
 
-## Setup
+Interactive Disaster Map
 
-```bash
-cd "c:\Disaster Management System\server"
-npm install
-cp .env.example .env   # or create .env manually
+Analytics & Reports
 
-cd "../client"
-npm install
-```
+🛠 Tech Stack
+----------------------------------------------------------------------------------------------------------------------------
 
-Update `server/.env` as needed:
+Frontend
+-
+React (Vite)
 
-```env
-MONGODB_URI=mongodb://localhost:27017/disaster-mgmt
-PORT=5000
-JWT_SECRET=supersecretjwt
-JWT_EXPIRE=7d
-CLIENT_URL=http://localhost:5173
-```
+React Router
 
-## Seed Data
+Tailwind CSS
 
-```bash
-cd "c:\Disaster Management System\server"
-npm run seed
-```
+Leaflet Maps
 
-Creates users:
+Recharts
 
-- `citizen@test.com` (password `123456`, role `citizen`)
-- `authority@test.com` (password `123456`, role `authority`)
-- `admin@test.com` (password `123456`, role `admin`)
+Backend
+-
+Node.js
 
-And a couple of sample incidents.
+Express.js
 
-## Run in Development
+MongoDB (Mongoose)
 
-### Backend
+Socket.io
 
-```bash
-cd "c:\Disaster Management System\server"
-npm run dev
-```
+JWT Authentication
 
-### Frontend
+Multer
 
-```bash
-cd "c:\Disaster Management System\client"
-npm run dev
-```
+👨‍💻 Author
+----------------------------------------------------------------------------------------------------------------------------
+Nikhil Malakala
 
-Open: http://localhost:5173
-
-Backend serves:
-
-- REST API under `/api/*`
-- Socket.io under `/socket.io`
-- Uploaded images under `/uploads/*`
-
-## Core Features
-
-- User auth (JWT, roles: `citizen`, `authority`, `admin`)
-- Incident reporting with image upload and geolocation (2dsphere index)
-- Real-time SOS alerts via Socket.io
-- Authority dashboard (status management, responder assignment)
-- Analytics dashboards with Recharts (status distribution, time series)
-- Dark, glassmorphism UI with Tailwind CSS
-
+2nd Year B.Tech CSE Student
